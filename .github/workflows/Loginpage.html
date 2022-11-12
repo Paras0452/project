@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Loginpage.css" />
+    <title>Sign in form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form onsubmit="login()" id="LoginForm" action="#" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input id="Email" type="text" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input id="Password" type="password" placeholder="Password" />
+                    </div>
+                    <a href="#" onclick="forgotpass()" style="text-decoration: none;"> Forgot Password?</a>
+                    <input id="btn_login" class="btn solid" type="submit" value="Login" />
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i onclick="googlesignin()" class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </form>
+                <form onsubmit="signup()" action="#" id="RegisterForm" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input id="email" type="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input id="password" type="password" placeholder="Password" />
+                    </div>
+                    <input id="btn_register" type="submit" class="btn solid" value="Sign up" />
+
+
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here?</h3>
+                    <p>
+                        Click on SignUp to enjoy your personalised Instagram!
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn"> Sign up</button>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us?</h3>
+                    <p>
+                        SignIn with your credentials!
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="Firebase.js"></script>
+    <script src="Loginpage.js"></script>
+    <script src="Register.js"></script>
+</body>
+
+</html>
